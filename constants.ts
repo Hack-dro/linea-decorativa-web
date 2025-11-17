@@ -37,12 +37,12 @@ export const services: Service[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 1, category: 'Cocina', title: 'Cocina de Mármol y Nogal', imageUrl: 'https://picsum.photos/seed/kitchen1/800/600' },
-  { id: 2, category: 'Sala', title: 'Sala de Estar de Doble Altura', imageUrl: 'https://picsum.photos/seed/livingroom1/800/1000' },
-  { id: 3, category: 'Dormitorio', title: 'Santuario Minimalista', imageUrl: 'https://picsum.photos/seed/bedroom1/800/600' },
-  { id: 4, category: 'Baño', title: 'Baño Spa con Vistas', imageUrl: 'https://picsum.photos/seed/bathroom1/800/1000' },
-  { id: 5, category: 'Sala', title: 'Rincón de Lectura Acogedor', imageUrl: 'https://picsum.photos/seed/livingroom2/800/600' },
-  { id: 6, category: 'Cocina', title: 'Cocina Abierta Estilo Industrial', imageUrl: 'https://picsum.photos/seed/kitchen2/800/1000' },
+  { id: 1, category: 'Cocina', title: 'Cocina de Mármol y Nogal', imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a67767e5c?q=80&w=800&auto=format&fit=crop' },
+  { id: 2, category: 'Sala', title: 'Sala de Estar de Doble Altura', imageUrl: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=800&auto=format&fit=crop' },
+  { id: 3, category: 'Dormitorio', title: 'Santuario Minimalista', imageUrl: 'https://images.unsplash.com/photo-1585319442659-5a38a39d4899?q=80&w=800&auto=format&fit=crop' },
+  { id: 4, category: 'Baño', title: 'Baño Spa con Vistas', imageUrl: 'https://images.unsplash.com/photo-1583845112124-71b392e27b6c?q=80&w=800&auto=format&fit=crop' },
+  { id: 5, category: 'Sala', title: 'Rincón de Lectura Acogedor', imageUrl: 'https://images.unsplash.com/photo-1512403752761-12c00a9a35e2?q=80&w=800&auto=format&fit=crop' },
+  { id: 6, category: 'Cocina', title: 'Cocina Abierta Estilo Industrial', imageUrl: 'https://images.unsplash.com/photo-1579725942439-de8363ed73c8?q=80&w=800&auto=format&fit=crop' },
 ];
 
 export const processSteps: ProcessStep[] = [
