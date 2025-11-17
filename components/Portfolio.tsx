@@ -20,7 +20,7 @@ const Portfolio: React.FC = () => {
                 alt={project.title}
                 className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-500 flex items-end p-6">
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-500 flex items-end p-8">
                 <div className="text-white transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                   <p className="text-sm font-light tracking-widest uppercase">{project.category}</p>
                   <h3 className="text-2xl font-semibold">{project.title}</h3>
