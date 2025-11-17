@@ -1,24 +1,25 @@
 
 import React from 'react';
-import { testimonials } from '../constants';
-import { QuoteIcon } from './icons/QuoteIcon';
+import { galleryImages } from '../constants';
 
-const Testimonials: React.FC = () => {
+const ImageGallery: React.FC = () => {
   return (
-    <section id="testimonios" className="py-20 md:py-32 bg-[#F0EBE3]">
+    <section id="galeria" className="py-20 md:py-32 bg-[#FDFDFB]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold text-gray-800">Lo que Dicen Nuestros Clientes</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-gray-800">Galería de Inspiración</h2>
+          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+            Visualiza las posibilidades y encuentra la inspiración para tu próximo proyecto en nuestra cuidada selección de ambientes.
+          </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
-                <QuoteIcon className="w-10 h-10 text-gray-300 mb-4" />
-                <p className="text-gray-600 italic leading-relaxed flex-grow mb-6">"{testimonial.quote}"</p>
-                <div>
-                    <p className="font-bold text-gray-800">{testimonial.author}</p>
-                    <p className="text-sm text-gray-500">{testimonial.location}</p>
-                </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {galleryImages.map((image) => (
+            <div key={image.id} className="overflow-hidden rounded-lg shadow-lg group aspect-square">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+              />
             </div>
           ))}
         </div>
@@ -27,4 +28,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default ImageGallery;

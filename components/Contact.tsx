@@ -80,9 +80,9 @@ const Contact: React.FC = () => {
           <div className="lg:w-1/2 text-gray-700">
              <h3 className="text-2xl font-semibold mb-6">Información de Contacto</h3>
              <div className="space-y-4 text-lg">
-                <p><strong>Email:</strong><br/> <a href="mailto:contacto@lineadecorativa.com" className="hover:underline">contacto@lineadecorativa.com</a></p>
-                <p><strong>Teléfono:</strong><br/> <a href="tel:+525512345678" className="hover:underline">+52 55 1234 5678</a></p>
-                <p><strong>Horario:</strong><br/> Lunes a Viernes, 9:00 - 18:00</p>
+                <p><strong>Email:</strong><br/> <a href="mailto:consultaslineadecorativa@hotmail.com" className="hover:underline">consultaslineadecorativa@hotmail.com</a></p>
+                <p><strong>Teléfono:</strong><br/> <a href="tel:971192209" className="hover:underline">971 192 209</a></p>
+                <p><strong>Horario:</strong><br/> Lunes a Viernes, 9:00 - 19:00</p>
              </div>
           </div>
         </div>
