@@ -20,8 +20,8 @@ export interface ProcessStep {
     description: string;
 }
 
-export interface Testimonial {
-    quote: string;
-    author: string;
-    location: string;
+export interface GalleryImage {
+    id: number;
+    src: string;
+    alt: string;
 }
