@@ -25,39 +25,45 @@ export const INITIAL_CONTENT: SiteContent = {
   gallery: [
     {
       id: 'gallery-1',
-      url: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=800&auto=format&fit=crop',
-      alt: 'Comedor minimalista',
-      title: 'Comedor Minimalista'
+      url: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=800&auto=format&fit=crop',
+      alt: 'Comedor minimalista con sillas verdes',
+      title: 'Comedor Minimalista',
+      category: 'COMEDOR'
     },
     {
       id: 'gallery-2',
-      url: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=800&auto=format&fit=crop',
-      alt: 'Habitación estilo bohemio',
-      title: 'Descanso Bohemio'
+      url: 'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?q=80&w=800&auto=format&fit=crop',
+      alt: 'Habitación luminosa con cama cómoda',
+      title: 'Descanso Bohemio',
+      category: 'DORMITORIO'
     },
     {
       id: 'gallery-3',
-      url: 'https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=800&auto=format&fit=crop',
-      alt: 'Cocina moderna de mármol',
-      title: 'Cocina de Mármol'
+      url: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop',
+      alt: 'Cocina moderna con isla',
+      title: 'Cocina de Mármol',
+      category: 'COCINA'
     },
     {
       id: 'gallery-4',
-      url: 'https://images.unsplash.com/photo-1616137466211-f939a420be84?q=80&w=800&auto=format&fit=crop',
-      alt: 'Oficina en casa',
-      title: 'Home Office Zen'
+      url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop',
+      alt: 'Espacio de trabajo limpio y organizado',
+      title: 'Home Office Zen',
+      category: 'OFICINA'
     },
     {
       id: 'gallery-5',
-      url: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=800&auto=format&fit=crop',
-      alt: 'Baño de lujo',
-      title: 'Santuario Personal'
+      url: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=800&auto=format&fit=crop',
+      alt: 'Baño moderno con tina',
+      title: 'Santuario Personal',
+      category: 'BAÑO'
     },
     {
       id: 'gallery-6',
-      url: 'https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=800&auto=format&fit=crop',
-      alt: 'Recibidor elegante',
-      title: 'Entrada Elegante'
+      url: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=800&auto=format&fit=crop',
+      alt: 'Entrada con consola y arte',
+      title: 'Entrada Elegante',
+      category: 'RECIBIDOR'
     }
   ]
 };

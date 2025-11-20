@@ -9,7 +9,8 @@ import { AIChat } from './components/AIChat';
 const App: React.FC = () => {
   // Content state initialization logic
   const [content, setContent] = useState<SiteContent>(() => {
-    const saved = localStorage.getItem('linea-decorativa-content');
+    // IMPORTANT: Changed version to v5 to force reload of new images
+    const saved = localStorage.getItem('linea-decorativa-content-v5');
     return saved ? JSON.parse(saved) : INITIAL_CONTENT;
   });
 
@@ -18,14 +19,14 @@ const App: React.FC = () => {
 
   // Persist changes locally whenever content changes
   useEffect(() => {
-    localStorage.setItem('linea-decorativa-content', JSON.stringify(content));
+    localStorage.setItem('linea-decorativa-content-v5', JSON.stringify(content));
   }, [content]);
 
   // Handlers
   const resetContent = () => {
     if (window.confirm('¿Estás seguro de que deseas volver al diseño original? Se perderán los cambios no exportados.')) {
       setContent(INITIAL_CONTENT);
-      localStorage.removeItem('linea-decorativa-content');
+      localStorage.removeItem('linea-decorativa-content-v5');
     }
   };
 
@@ -174,7 +175,9 @@ const App: React.FC = () => {
                   className="w-full mb-4"
                 />
                 <h4 className="text-center font-serif text-stone-800 text-lg">{item.title}</h4>
-                <p className="text-center text-xs text-stone-400 uppercase tracking-widest mt-1">Interiorismo</p>
+                <p className="text-center text-xs text-stone-400 uppercase tracking-widest mt-1">
+                  {item.category || 'INTERIORISMO'}
+                </p>
               </div>
             ))}
           </div>
@@ -185,6 +188,7 @@ const App: React.FC = () => {
       <footer id="contacto" className="bg-stone-900 text-stone-300 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Column 1: Brand */}
             <div>
               <h3 className="text-2xl font-serif text-white mb-6">Línea Decorativa</h3>
               <p className="text-stone-400 mb-6">
@@ -197,6 +201,7 @@ const App: React.FC = () => {
               </div>
             </div>
             
+            {/* Column 2: Contact Info */}
             <div>
               <h4 className="text-white uppercase tracking-widest text-sm font-bold mb-6">Contacto</h4>
               <ul className="space-y-4">
@@ -211,11 +216,12 @@ const App: React.FC = () => {
               </ul>
             </div>
 
+            {/* Column 3: Schedule */}
             <div>
               <h4 className="text-white uppercase tracking-widest text-sm font-bold mb-6">Horario</h4>
               <ul className="space-y-2 text-stone-400">
-                <li className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                  <span>Lunes a Viernes</span>
+                <li className="flex flex-col gap-1">
+                  <span className="text-white font-medium">Lunes a Viernes</span>
                   <span>9:00 - 19:00</span>
                 </li>
               </ul>
