@@ -9,8 +9,8 @@ import { AIChat } from './components/AIChat';
 const App: React.FC = () => {
   // Content state initialization logic
   const [content, setContent] = useState<SiteContent>(() => {
-    // IMPORTANT: Changed version to v5 to force reload of new images
-    const saved = localStorage.getItem('linea-decorativa-content-v5');
+    // IMPORTANT: Changed version to v11 to force reload of new images (Sala & Bedroom fix)
+    const saved = localStorage.getItem('linea-decorativa-content-v11');
     return saved ? JSON.parse(saved) : INITIAL_CONTENT;
   });
 
@@ -19,14 +19,14 @@ const App: React.FC = () => {
 
   // Persist changes locally whenever content changes
   useEffect(() => {
-    localStorage.setItem('linea-decorativa-content-v5', JSON.stringify(content));
+    localStorage.setItem('linea-decorativa-content-v11', JSON.stringify(content));
   }, [content]);
 
   // Handlers
   const resetContent = () => {
     if (window.confirm('¿Estás seguro de que deseas volver al diseño original? Se perderán los cambios no exportados.')) {
       setContent(INITIAL_CONTENT);
-      localStorage.removeItem('linea-decorativa-content-v5');
+      localStorage.removeItem('linea-decorativa-content-v11');
     }
   };
 

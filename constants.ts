@@ -32,7 +32,8 @@ export const INITIAL_CONTENT: SiteContent = {
     },
     {
       id: 'gallery-2',
-      url: 'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?q=80&w=800&auto=format&fit=crop',
+      // Changed image to fix broken link error
+      url: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=800&auto=format&fit=crop',
       alt: 'Habitación luminosa con cama cómoda',
       title: 'Descanso Bohemio',
       category: 'DORMITORIO'
@@ -53,17 +54,18 @@ export const INITIAL_CONTENT: SiteContent = {
     },
     {
       id: 'gallery-5',
-      url: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=800&auto=format&fit=crop',
+      url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
       alt: 'Baño moderno con tina',
       title: 'Santuario Personal',
       category: 'BAÑO'
     },
     {
       id: 'gallery-6',
-      url: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=800&auto=format&fit=crop',
-      alt: 'Entrada con consola y arte',
-      title: 'Entrada Elegante',
-      category: 'RECIBIDOR'
+      // Changed from Entrada/Recibidor to Sala as requested
+      url: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=800&auto=format&fit=crop',
+      alt: 'Sala de estar con sofá moderno',
+      title: 'Sala de Estar',
+      category: 'SALA'
     }
   ]
 };
