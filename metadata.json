@@ -1,5 +1,5 @@
-
 {
-  "name": "Línea Decorativa - Diseño de Interiores",
-  "description": "A sophisticated single-page website for Línea Decorativa, an interior design company specializing in remodeling, custom furniture, and space advisory. The design prioritizes elegant, high-quality imagery to showcase their work."
+  "name": "Línea Decorativa 2.0",
+  "description": "High-end interior design portfolio with client-side content management and AI design assistance.",
+  "requestFramePermissions": []
 }

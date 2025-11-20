@@ -1,27 +1,25 @@
-// FIX: Import React to provide types for component props.
-import React from 'react';
-
-export interface Service {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  title: string;
-  description: string;
+export interface ImageContent {
+  id: string;
+  url: string;
+  alt: string;
+  title?: string;
+  description?: string;
 }
 
-export interface Project {
-  id: number;
-  category: string;
-  title: string;
-  imageUrl: string;
+export interface SiteContent {
+  hero: ImageContent;
+  about: ImageContent;
+  gallery: ImageContent[];
 }
 
-export interface ProcessStep {
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-    title: string;
-    description: string;
+export enum AIState {
+  IDLE,
+  LOADING,
+  SUCCESS,
+  ERROR
 }
 
-export interface GalleryImage {
-    id: number;
-    src: string;
-    alt: string;
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
 }
